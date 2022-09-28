@@ -5,5 +5,8 @@
         "example-android": "cd example && npx react-native run-android",
         "example-ios": "cd example && npx pod-install && npx react-native run-ios",
         "example-windows": "cd example && npx react-native run-windows"
+    },
+    "devDependencies": {
+        "deprecated-react-native-prop-types": "^2.3.0"
     }
 }

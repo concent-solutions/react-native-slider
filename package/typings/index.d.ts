@@ -1,11 +1,13 @@
 import * as React from 'react';
 import * as ReactNative from 'react-native';
+import type {ViewPropTypes as ViewProps} from 'deprecated-react-native-prop-types';
+
 
 type SliderReferenceType =
   | (React.MutableRefObject<SliderRef> & React.LegacyRef<Slider>)
   | undefined;
 
-export interface SliderPropsAndroid extends ReactNative.ViewProps {
+export interface SliderPropsAndroid extends ViewProps {
   /**
    * Color of the foreground switch grip.
    */
@@ -16,7 +18,7 @@ export interface SliderRef {
   updateValue(value: number): void;
 }
 
-export interface SliderPropsIOS extends ReactNative.ViewProps {
+export interface SliderPropsIOS extends ViewProps {
   /**
    * Assigns a maximum track image. Only static images are supported.
    * The leftmost pixel of the image will be stretched to fill the track.
@@ -48,7 +50,7 @@ export interface SliderPropsIOS extends ReactNative.ViewProps {
   trackImage?: ReactNative.ImageURISource;
 }
 
-export interface SliderPropsWindows extends ReactNative.ViewProps {
+export interface SliderPropsWindows extends ViewProps {
   /**
    * Controls the orientation of the slider, default value is 'false' (horizontal).
    */

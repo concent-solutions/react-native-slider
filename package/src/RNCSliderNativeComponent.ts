@@ -1,5 +1,6 @@
-import type {ColorValue, HostComponent, ViewProps} from 'react-native';
+import type {ColorValue, HostComponent} from 'react-native';
 import codegenNativeComponent from 'react-native/Libraries/Utilities/codegenNativeComponent';
+import type {ViewPropTypes as ViewProps} from 'deprecated-react-native-prop-types';
 //@ts-ignore
 import type {ImageSource} from 'react-native/Libraries/Image/ImageSource';
 import type {

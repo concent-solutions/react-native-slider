@@ -4,12 +4,12 @@ import {
   Platform,
   StyleSheet,
   AccessibilityActionEvent,
-  ViewProps,
   ViewStyle,
   ColorValue,
   NativeSyntheticEvent,
   StyleProp,
 } from 'react-native';
+import type {ViewPropTypes as ViewProps} from 'deprecated-react-native-prop-types';
 import RCTSliderNativeComponent from './index';
 //@ts-ignore
 import type {ImageSource} from 'react-native/Libraries/Image/ImageSource';
